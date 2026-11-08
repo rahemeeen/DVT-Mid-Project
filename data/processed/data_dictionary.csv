@@ -1,0 +1,18 @@
+column,meaning,data type,unit,role,missing (of 7595 rows)
+iso3,ISO 3-letter country code,nominal,–,id / place key,0
+country,Country name (short form),nominal,–,PLACE FIELD,0
+region,World Bank region,nominal,–,CATEGORY (7 levels),0
+income_group,World Bank income group (current classification),ordinal,–,second category,0
+"lat, lon",Capital city coordinates,interval,degrees,place (for symbol maps),210
+year,Calendar year,interval,year,TIME FIELD,0
+decade,Year rounded down to the decade,ordinal,–,derived time bucket,0
+life_expectancy,"Life expectancy at birth, total",ratio,years,OUTCOME MEASURE,2
+gdp_per_capita,"GDP per person, PPP, constant prices",ratio,intl $ per person,main explanatory variable,803
+co2_per_capita,CO₂ emissions per person,ratio,t CO₂ per person,numeric,507
+internet_users_pct,Individuals using the internet,ratio,% of population,numeric,1381
+population,Total population,ratio,people,size / weights,0
+under5_mortality,Under-5 mortality rate,ratio,"per 1,000 live births",numeric,738
+urban_pct,Urban population,ratio,% of population,numeric,0
+"log_gdp, log_co2, log_u5mr",log10 of the column above,interval,log10 units,derived,1297
+co2_total_mt,co2_per_capita × population,ratio,million tonnes CO₂,derived,507
+edges (separate table),4-nearest-neighbour development similarity,ratio,0–1 score,RELATIONSHIP TABLE,n/a
